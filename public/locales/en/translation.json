@@ -1,0 +1,68 @@
+{
+  "navbar": {
+    "1": "Home",
+    "2": "About us",
+    "3": "Shop",
+    "4": "Blog",
+    "5": "Login",
+    "6": "Dark",
+    "7": "Light"
+  },
+  "footer": {
+    "1": "© Copyright 2024 | Otaru By Uzay. All rights reserved.",
+    "2": "Address",
+    "3": "Social",
+    "4": "İnformation",
+    "5": "Instagram",
+    "6": "Linkedin",
+    "7": "Twitter",
+    "8": "Contact us",
+    "9": "Our Team",
+    "10": "FAQ"
+  },
+  "home-page": {
+    "1": "20% off purchases over $500",
+    "2": "Go to shopping. . .",
+    "3": "Discover our amazing headphones",
+    "4": "Series of some pretty amazing tech products",
+    "5": "Shop now ...",
+    "6": "Enter the code and get 50% discount on selected product",
+    "7":"Enter code"
+  },
+  "bestseller": {
+    "0": "Bestseller",
+    "1": "Smartphone",
+    "2": "BX23 Headphones",
+    "3": "Mouse",
+    "4": "SmartWatch",
+    "5": "Add to cart"
+  },
+  "about-page": {
+    "1": "About us",
+    "2": "Tune in with incredible sharpness of the cutting edge sound tech",
+    "3": "The headphones we offer are designed with the latest technology and provide a high-quality sound experience. Our headphones are comfortable and durable for long-term use. Our phones stand out for their modern design and performance based on the latest technology. With long battery life, our phones allow users to work independently throughout the day.",
+    "4": "Excellent Design and Aesthetics:",
+    "5": "Comfort and Durability:",
+    "6": "Security and Essence",
+    "7": "Our headphones stand out for their sound technology as well as excellent design and aesthetics.",
+    "8": "Our headphones are comfortable and durable for long time use, we aim to provide the best experience to the users.",
+    "9": "Our phones are equipped with security features that respect users' data and privacy."
+  },
+  "product":{
+    "1":"The product has been added to the cart"
+  },
+  "cart-page": {
+    "1": "Product",
+    "2": "Price",
+    "3": "Quantity",
+    "4": "Total price",
+    "5": "Total",
+    "6": "Buy",
+    "7":"The discount code has been successfully applied",
+    "8":"Please enter the discount code"
+  },
+  "empty-cart": {
+    "1": "Your cart is empty!",
+    "2": "Continue Shopping"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "navbar": {
+    "1": "Ana səhifə",
+    "2": "Haqqımızda",
+    "3": "Mağaza",
+    "4": "Bloq",
+    "5": "Daxil ol",
+    "6": "Tünd",
+    "7": "Açıq"
+  },
+
+  "footer": {
+    "1": "© Copyright 2024 | Otaru Uzay tərəfindən. Bütün hüquqlar qorunur.",
+    "2": "Ünvan",
+    "3": "Sosial",
+    "4": "Məlumat",
+    "5": "İnstaqram",
+    "6": "Linkedin",
+    "7": "Twitter",
+    "8": "Əlaqə",
+    "9": "Komandamız",
+    "10": "Sual-Cavab"
+  },
+  "home-page": {
+    "1": "500 dollardan yuxarı alışlara 20% endirim",
+    "2": "Mağazaya gedin. . .",
+    "3": "Möhtəşəm qulaqlıqlarımızı kəşf edin",
+    "4": "Bəzi olduqca heyrətamiz texnoloji məhsullar seriyası",
+    "5": "İndi alış-veriş edin",
+    "6": "Kodu daxil edin və seçilmiş  məhsula 50% endirim qazanın",
+    "7":"Kodu daxil edin"
+  },
+
+  "bestseller": {
+    "0": "Ən çox satan",
+    "1": "Telefon",
+    "2": "BX23 qulaqlıq",
+    "3": "Siçan",
+    "4": "Smart saat",
+    "5": "Səbətə əlavə et"
+  },
+  "about-page": {
+    "1": "Haqqımızda",
+    "2": "Ən müasir səs texnologiyasının inanılmaz kəskinliyi ilə uyğunlaşın",
+    "3": "Bizim təklif etdiyimiz qulaqlıqlar son texnologiya ilə dizayn edilmişdir və yüksək keyfiyyətli səs təcrübəsi təmin edir.Qulaqlıqlarımız, uzun müddət istifadə üçün rahat və dayanıqlıdır. Telefonlarımız isə son texnologiyaya əsaslanan müasir dizayn və performans ilə diqqət çəkir.Uzun batareya ömrü ilə telefonlarımız, istifadəçilərə bir gün boyu müstəqil işləmə imkanı verir.",
+    "4": "Əla Dizayn və Estetika:",
+    "5": "Rahatlıq və Dayanıqlılıq:",
+    "6": "Təhlükəsizlik və Mahiyyət",
+    "7": "Qulaqlıqlarımız, səs texnologiyasının yanı sıra əla dizayn və estetika ilə də diqqət çəkir.",
+    "8": "Qulaqlıqlarımız, uzun müddət istifadə üçün rahat və dayanıqlıdır, istifadəçilərə ən yaxşı təcrübəni yaşatmağı hədəfləyirik.",
+    "9": "Bizim telefonlarımız, istifadəçilərin məlumatlarına və mahiyyətinə hörmət edən təhlükəsizlik funksiyaları ilə təchiz edilmişdir."
+  },
+  "product":{
+    "1":"Məhsul səbətə əlavə edildi"
+  },
+  "cart-page": {
+    "1": "Məhsul",
+    "2": "Qiymət",
+    "3": "Say",
+    "4": "Ümumi Qiymət",
+    "5": "Ümumi məbləğ",
+    "6": "Almaq",
+    "7":"Endirim kodu uğurla tətbiq edildi",
+    "8":"Zəhmət olmasa endirim kodunu daxil edin"
+  },
+  "empty-cart": {
+    "1": "Kartınız boşdur!",
+    "2": "Almağa davam edin"
+  }
+}
