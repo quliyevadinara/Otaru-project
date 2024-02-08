@@ -7,12 +7,14 @@ import { SlBasket } from "react-icons/sl";
 import { FaRegHeart } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { useCart } from "react-use-cart";
+import { useWishlist } from "react-use-wishlist";
 const NavPage = () => {
   const { t, i18n } = useTranslation();
   const handleChangeLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
   const { totalItems } = useCart();
+  const { totalWishlistItems } = useWishlist();
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" className="bg-dark navbar-dark">
@@ -68,6 +70,7 @@ const NavPage = () => {
               <Link to="/wishlist" className="nav-link">
                 <FaRegHeart />
               </Link>
+              <span className="wishlist-item">{totalWishlistItems}</span>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -44,7 +44,10 @@ const Cart = () => {
                     <th
                       scope="row"
                       className="remove-item"
-                      onClick={() => removeItem(item.id)}
+                      onClick={() => {
+                        removeItem(item.id)
+                        toast.success(t("cart-page.9"))
+                      }}
 
                     >
                       X

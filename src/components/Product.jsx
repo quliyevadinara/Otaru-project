@@ -4,15 +4,16 @@ import { useCart } from "react-use-cart";
 import { ProductContext } from "../App";
 import { toast } from "react-toastify";
 import WishlistBtn from "./WishlistBtn";
+import { useNavigate } from "react-router-dom";
+import SingleProduct from "./SingleProduct";
 
 const Product = ({ product }) => {
   const [changeVisibility, setChangeVisibility] = useState("");
   const { t, i18n } = useTranslation();
-  const [productData, setProductData] = useContext(ProductContext);
-  console.log(product);
-  const {items, addItem } = useCart();
+  const { items, addItem } = useCart();
+  const navigate = useNavigate();
   return (
-    <div>
+    <div onClick={() => navigate(`/shop/${product.id}`)}>
       <div className="product">
         <div
           className={changeVisibility}
@@ -23,21 +24,27 @@ const Product = ({ product }) => {
             setChangeVisibility("");
           }}
         >
-          <div className="product-image-inner">
+          <div
+            className="product-image-inner"
+            
+          >
             <button
               className="add-cart-btn"
-              onClick={() => {
+              onClick={(e) => {
+                e.stopPropagation();
                 addItem(product);
                 toast.success(`${t("product.1")}`);
               }}
             >
               {t("bestseller.5")}
             </button>
-            <WishlistBtn/>
+            <WishlistBtn product={product} />
             <h5>{product.name}</h5>
             <span>{product.price}.00$</span>
           </div>
-          <img className="bestseller-image" src={product.image} />
+          <div className="product-image">
+            <img className="bestseller-image" src={product.image} />
+          </div>
         </div>
       </div>
     </div>

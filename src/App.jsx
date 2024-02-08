@@ -20,6 +20,8 @@ import ShopPage from "./pages/ShopPage";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { WishlistProvider } from "react-use-wishlist";
+import SingleProduct from "./components/SingleProduct";
 
 export const ProductContext = createContext();
 
@@ -48,37 +50,40 @@ function App() {
   return (
     <div className="App">
       <ProductContext.Provider value={[productData, setProductData]}>
-        <CartProvider>
-          <BrowserRouter>
-            <NavPage />
-            <ToastContainer
-              position="top-right"
-              autoClose={2000}
-              hideProgressBar={false}
-              newestOnTop={false}
-              closeOnClick
-              rtl={false}
-              pauseOnFocusLoss
-              draggable
-              pauseOnHover
-              theme="light"
-            />
-            <ToastContainer />
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/our-team" element={<OurTeamPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/faq" element={<FaqPage />} />
-              <Route path="/cart" element={<CartPage />} />
-              <Route path="/wishlist" element={<WishlistPage />} />
-              <Route path="/shop" element={<ShopPage />} />
-              <Route path="/blogs" element={<Blogs />} />
-              <Route path="/addBlog" element={<AddBlog />} />
-            </Routes>
-            <Footer />
-          </BrowserRouter>
-        </CartProvider>
+        <WishlistProvider>
+          <CartProvider>
+            <BrowserRouter>
+              <NavPage />
+              <ToastContainer
+                position="top-right"
+                autoClose={1000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss={false}
+                draggable
+                pauseOnHover={false}
+                theme="light"
+              />
+              <ToastContainer />
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/our-team" element={<OurTeamPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/faq" element={<FaqPage />} />
+                <Route path="/cart" element={<CartPage />} />
+                <Route path="/wishlist" element={<WishlistPage />} />
+                <Route path="/shop" element={<ShopPage />} />
+                <Route path="/shop/:id" element={<SingleProduct />} />
+                <Route path="/blogs" element={<Blogs />} />
+                <Route path="/addBlog" element={<AddBlog />} />
+              </Routes>
+              <Footer />
+            </BrowserRouter>
+          </CartProvider>
+        </WishlistProvider>
       </ProductContext.Provider>
     </div>
   );

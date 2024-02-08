@@ -27,7 +27,7 @@
     "4": "Series of some pretty amazing tech products",
     "5": "Shop now ...",
     "6": "Enter the code and get 50% discount on selected product",
-    "7":"Enter code"
+    "7": "Enter code"
   },
   "bestseller": {
     "0": "Bestseller",
@@ -48,8 +48,8 @@
     "8": "Our headphones are comfortable and durable for long time use, we aim to provide the best experience to the users.",
     "9": "Our phones are equipped with security features that respect users' data and privacy."
   },
-  "product":{
-    "1":"The product has been added to the cart"
+  "product": {
+    "1": "The product has been added to the cart"
   },
   "cart-page": {
     "1": "Product",
@@ -58,11 +58,33 @@
     "4": "Total price",
     "5": "Total",
     "6": "Buy",
-    "7":"The discount code has been successfully applied",
-    "8":"Please enter the discount code"
+    "7": "The discount code has been successfully applied",
+    "8": "Please enter the discount code",
+    "9": "The product has been removed from the cart"
   },
   "empty-cart": {
     "1": "Your cart is empty!",
     "2": "Continue Shopping"
+  },
+  "our-team": {
+    "1": "Product manager",
+    "2": "Designer",
+    "3": "Developer",
+    "4": "Copywriter",
+    "5": "Architect",
+    "6": "Producer",
+    "7": "Get to know our team members"
+  },
+  "single-product": {
+    "1": "Color",
+    "2": "The products we offer are designed with the latest technology and ensure high quality. Our products are comfortable and durable for long time use, we aim to provide the best experience to the users."
+  },
+  "empty-wishlist": { "1": "Your wishlist is empty" },
+  "wishlist": {
+    "1": "The product has been removed from your favorites",
+    "2": "The product has been added to your favorites"
+  },
+  "recommend":{
+    "1":"Recommended ones"
   }
 }
