@@ -7,6 +7,7 @@ import "./language/i18next";
 import Slider from "./components/Slider";
 import { Provider } from "react-redux";
 import { store } from "./redux/Store";
+import "react-toastify/dist/ReactToastify.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

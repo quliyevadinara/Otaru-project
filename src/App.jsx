@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -18,13 +17,15 @@ import { createContext, useEffect, useState } from "react";
 import { CartProvider } from "react-use-cart";
 import ShopPage from "./pages/ShopPage";
 import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 import { WishlistProvider } from "react-use-wishlist";
 import SingleProduct from "./components/SingleProduct";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
 export const ProductContext = createContext();
-
+export const UserContext = createContext();
+export const AccountDataContext = createContext();
 function App() {
   useEffect(() => {
     axios
@@ -43,6 +44,22 @@ function App() {
   }, []);
 
   const [productData, setProductData] = useState();
+  const [accountData, setAccountData] = useState(
+    localStorage.getItem("account")
+      ? JSON.parse(localStorage.getItem("account"))
+      : false
+  );
+  const [user, setUser] = useState(
+    localStorage.getItem("user")
+      ? JSON.parse(localStorage.getItem("user"))
+      : [
+          {
+            name: "",
+            mail: "",
+            pass: "",
+          },
+        ]
+  );
   const blogs = useSelector((store) => store.AppReducer);
   useEffect(() => {
     localStorage.setItem("Blogs", JSON.stringify(blogs));
@@ -50,40 +67,46 @@ function App() {
   return (
     <div className="App">
       <ProductContext.Provider value={[productData, setProductData]}>
-        <WishlistProvider>
-          <CartProvider>
-            <BrowserRouter>
-              <NavPage />
-              <ToastContainer
-                position="top-right"
-                autoClose={1000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss={false}
-                draggable
-                pauseOnHover={false}
-                theme="light"
-              />
-              <ToastContainer />
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/about" element={<AboutPage />} />
-                <Route path="/our-team" element={<OurTeamPage />} />
-                <Route path="/contact" element={<ContactPage />} />
-                <Route path="/faq" element={<FaqPage />} />
-                <Route path="/cart" element={<CartPage />} />
-                <Route path="/wishlist" element={<WishlistPage />} />
-                <Route path="/shop" element={<ShopPage />} />
-                <Route path="/shop/:id" element={<SingleProduct />} />
-                <Route path="/blogs" element={<Blogs />} />
-                <Route path="/addBlog" element={<AddBlog />} />
-              </Routes>
-              <Footer />
-            </BrowserRouter>
-          </CartProvider>
-        </WishlistProvider>
+        <AccountDataContext.Provider value={[accountData, setAccountData]}>
+          <UserContext.Provider value={[user, setUser]}>
+            <WishlistProvider>
+              <CartProvider>
+                <BrowserRouter>
+                  <NavPage />
+                  <ToastContainer
+                    position="top-right"
+                    autoClose={1000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss={false}
+                    draggable
+                    pauseOnHover={false}
+                    theme="light"
+                  />
+                  <ToastContainer />
+                  <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/about" element={<AboutPage />} />
+                    <Route path="/our-team" element={<OurTeamPage />} />
+                    <Route path="/contact" element={<ContactPage />} />
+                    <Route path="/faq" element={<FaqPage />} />
+                    <Route path="/cart" element={<CartPage />} />
+                    <Route path="/wishlist" element={<WishlistPage />} />
+                    <Route path="/shop" element={<ShopPage />} />
+                    <Route path="/login" element={<LoginPage />} />
+                    <Route path="/register" element={<RegisterPage />} />
+                    <Route path="/shop/:id" element={<SingleProduct />} />
+                    <Route path="/blogs" element={<Blogs />} />
+                    <Route path="/addBlog" element={<AddBlog />} />
+                  </Routes>
+                  <Footer />
+                </BrowserRouter>
+              </CartProvider>
+            </WishlistProvider>
+          </UserContext.Provider>
+        </AccountDataContext.Provider>
       </ProductContext.Provider>
     </div>
   );

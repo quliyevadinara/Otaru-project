@@ -54,9 +54,9 @@ const HomePage = () => {
           </Carousel.Item>
         </Carousel>
        
-      </div>{" "}
+      </div>
       <Bestseller />
-       <Slider/>
+       {/* <Slider/> */}
     </div>
   );
 };

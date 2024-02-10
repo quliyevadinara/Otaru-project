@@ -2,15 +2,13 @@ import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { ProductContext } from "../App";
 import { useTranslation } from "react-i18next";
-import { useCart } from "react-use-cart";
-import { toast } from "react-toastify";
 import WishlistBtn from "./WishlistBtn";
 import Recommended from "./Recommended";
+import AddtoCartBtn from "./AddtoCartBtn";
 
 const SingleProduct = () => {
   const { t, i18n } = useTranslation();
   const { id } = useParams();
-  const { items, addItem } = useCart();
   const [productData, setProductData] = useContext(ProductContext);
   const product = productData?.find((product) => product.id == id);
   return (
@@ -27,15 +25,7 @@ const SingleProduct = () => {
             {product.name} : {t("single-product.2")}
           </p>
           <div className="cart-wish">
-            <button
-              className="single-product-add-cart"
-              onClick={() => {
-                addItem(product);
-                toast.success(`${t("product.1")}`);
-              }}
-            >
-              {t("bestseller.5")}
-            </button>
+            <AddtoCartBtn product={product} />
             <WishlistBtn product={product} />
           </div>
         </div>

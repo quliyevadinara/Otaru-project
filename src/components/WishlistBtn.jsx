@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaRegHeart, FaUserInjured } from "react-icons/fa6";
+import { FaRegHeart} from "react-icons/fa6";
 import { useWishlist } from "react-use-wishlist";
 import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";

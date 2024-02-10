@@ -37,7 +37,8 @@
     "2": "BX23 qulaqlıq",
     "3": "Siçan",
     "4": "Smart saat",
-    "5": "Səbətə əlavə et"
+    "5": "Səbətə əlavə et",
+    "6": "Səbətdən çıxarın"
   },
   "about-page": {
     "1": "Haqqımızda",
@@ -79,14 +80,31 @@
   },
   "single-product": {
     "1": "Rəng",
-    "2":"Bizim təklif etdiyimiz məhsullar son texnologiya ilə dizayn edilmişdir və yüksək keyfiyyəti təmin edir. Məhsullarımız uzun müddət istifadə üçün rahat və dayanıqlıdır, istifadəçilərə ən yaxşı təcrübəni yaşatmağı hədəfləyirik."
+    "2": "Bizim təklif etdiyimiz məhsullar son texnologiya ilə dizayn edilmişdir və yüksək keyfiyyəti təmin edir. Məhsullarımız uzun müddət istifadə üçün rahat və dayanıqlıdır, istifadəçilərə ən yaxşı təcrübəni yaşatmağı hədəfləyirik."
   },
   "empty-wishlist": { "1": "Sizin bəyəndikləriniz boşdur" },
-  "wishlist":{
-    "1":"Məhsul bəyəndiklərinizdən silindi",
-    "2":"Məhsul bəyəndiklərinizə əlavə edildi"
+  "wishlist": {
+    "1": "Məhsul bəyəndiklərinizdən silindi",
+    "2": "Məhsul bəyəndiklərinizə əlavə edildi"
   },
-  "recommend":{
-    "1":"Tövsiyə olunanlar"
+  "recommend": {
+    "1": "Tövsiyə olunanlar"
+  },
+  "login": {
+    "1": "Səhv email!",
+    "2": "Səhv parol!",
+    "3": "Giriş et",
+    "4": "Parolu göstərin",
+    "5": "Hesabınız yoxdur? Hesab yarat"
+  },
+  "register": {
+    "1": "Səhv e-poçt! @ simvolundan istifadə edilməlidir.",
+    "2": "Minimum səkkiz simvol, ən azı bir hərf və bir rəqəm!",
+    "3": "Artıq bir hesabınız var mı? Daxil ol",
+    "4":"İstifadəçi adı",
+    "5":"E-poçt ünvanı",
+    "6":"Parol",
+    "7":"İndi qeydiyyatdan keç",
+    "8":"Qeydiyyatdan keç"
   }
 }

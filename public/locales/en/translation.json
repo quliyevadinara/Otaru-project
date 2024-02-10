@@ -35,7 +35,8 @@
     "2": "BX23 Headphones",
     "3": "Mouse",
     "4": "SmartWatch",
-    "5": "Add to cart"
+    "5": "Add to cart",
+    "6": "Remove from cart"
   },
   "about-page": {
     "1": "About us",
@@ -84,7 +85,24 @@
     "1": "The product has been removed from your favorites",
     "2": "The product has been added to your favorites"
   },
-  "recommend":{
-    "1":"Recommended ones"
+  "recommend": {
+    "1": "Recommended ones"
+  },
+  "login": {
+    "1": "Wrong email!",
+    "2": "Wrong password!",
+    "3": "Login",
+    "4": "Show Password",
+    "5": "Don't have an account? Create an account"
+  },
+  "register": {
+    "1": "Wrong email! The @ symbol must be used.",
+    "2": "Minimum eight characters, at least one letter and one number!",
+    "3": "Already have an account? Login",
+    "4": "Username",
+    "5": "Email address",
+    "6": "Password",
+    "7": "Register now",
+    "8":"Register"
   }
 }
