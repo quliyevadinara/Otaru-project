@@ -14,6 +14,7 @@ const NavPage = () => {
   const [accountData, setAccountData] = useContext(AccountDataContext);
   const [user, setUser] = useContext(UserContext);
 
+  console.log(accountData);
   const { t, i18n } = useTranslation();
   const handleChangeLanguage = (lang) => {
     i18n.changeLanguage(lang);
@@ -67,10 +68,10 @@ const NavPage = () => {
                 </button>
               </Nav.Link>
               <Link
-                to={accountData.access_token ? " " : "/login"}
-                className={accountData.access_token ? "nav-link nav-link-user" : "nav-link"}
+                to={accountData? " " : "/login"}
+                className={accountData ? "nav-link nav-link-user" : "nav-link"}
               >
-                {accountData.access_token ? <DropdownAccount/>: `${t("navbar.5")}`}
+                {accountData?.session?.access_token ? <DropdownAccount/>: `${t("navbar.5")}`}
               </Link>
 
               <Link to="/cart" className="nav-link">

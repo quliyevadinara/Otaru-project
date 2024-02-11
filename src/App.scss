@@ -634,7 +634,8 @@ $thirdcolor: rgb(6, 158, 6);
         font-size: 20px;
       }
     }
-    .login-btn,.register-btn {
+    .login-btn,
+    .register-btn {
       font-family: "Times New Roman", Times, serif;
       width: 15rem;
       margin-top: 20px;
@@ -653,6 +654,94 @@ $thirdcolor: rgb(6, 158, 6);
     }
     #pass-error {
       width: 280px;
+    }
+  }
+}
+.blog-page,
+.other-blog-info {
+  width: 100%;
+  .images-container {
+    position: relative;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-between;
+    .main-image {
+      height: 80vh;
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+    }
+    .second-image-container {
+      display: block;
+      height: 80vh;
+      // justify-content: flex-end;
+      .second-image {
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+  span {
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+    background: #a4a2a2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(99deg, #fff 39%, #fff0 100%);
+  }
+  h1 {
+    text-align: left;
+    margin: 50px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .single-blog {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    img {
+      width: 600px;
+      height: 400px;
+    }
+    .single-blog-text {
+      width: 400px;
+      height: 250px;
+    }
+  }
+}
+.single-blog-info {
+  width: 100%;
+
+  .single-blog {
+    text-align: left;
+    width: 100%;
+   
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    padding: 40px;
+    .single-blog-image{
+      width: 100%;
+         img {
+      margin: auto;
+      width: 100%;
+      height: 600px;
+    }}
+   
+    .single-blog-text{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 }

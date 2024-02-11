@@ -21,9 +21,10 @@ const Register = () => {
 
   const emailRegex = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
   const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-  const checkEmail = emailRegex.test(String(email).toLowerCase());
-  const checkPass = passwordRegex.test(String(password).toLowerCase());
+  const checkEmail = emailRegex.test(String(user.email).toLowerCase());
+  const checkPass = passwordRegex.test(String(user.password).toLowerCase());
 
+  console.log(checkPass,checkEmail);
   const handleChandePasswordToggle = (e) => {
     e.preventDefault();
     if (type === "password") {

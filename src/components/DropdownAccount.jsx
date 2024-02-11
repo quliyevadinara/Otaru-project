@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
 import { AccountDataContext, UserContext } from "../App";
 import { supabase } from "../supabase/client";
+import { useNavigate } from "react-router-dom";
 
 const DropdownAccount = () => {
   const [user, setUser] = useContext(UserContext);
   const [accountData, setAccountData] = useContext(AccountDataContext);
+  const navigate = useNavigate();
   const handleLogOut = async (e) => {
     e.preventDefault();
     try {
@@ -16,6 +18,10 @@ const DropdownAccount = () => {
       console.log(error);
     }
   };
+  const handleBlogAdmin = (e) => {
+    e.preventDefault();
+    navigate("/blogAdmin");
+  };
   return (
     <div>
       <div class="dropdown">
@@ -23,7 +29,7 @@ const DropdownAccount = () => {
         <div class="dropdown-content">
           <button onClick={handleLogOut}>Log out</button>
           <button>Products</button>
-          <button>Blogs</button>
+          <button onClick={handleBlogAdmin}>Blogs</button>
         </div>
       </div>
     </div>

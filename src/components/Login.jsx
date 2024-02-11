@@ -54,7 +54,6 @@ const Login = () => {
       console.log(accountData);
     } catch (error) {
       console.log(error);
-      toast.error("Parol ve ya email sehvdir");
     }
   };
   return (

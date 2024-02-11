@@ -22,10 +22,14 @@ import { WishlistProvider } from "react-use-wishlist";
 import SingleProduct from "./components/SingleProduct";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import BlogAdmin from "./admin/BlogAdmin";
+import SingleBlogPage from "./pages/SingleBlogPage";
 
+// contextler=============================================
 export const ProductContext = createContext();
 export const UserContext = createContext();
 export const AccountDataContext = createContext();
+
 function App() {
   useEffect(() => {
     axios
@@ -42,7 +46,7 @@ function App() {
       )
       .then((res) => setProductData(res.data));
   }, []);
-
+  // satate ler ==========================================
   const [productData, setProductData] = useState();
   const [accountData, setAccountData] = useState(
     localStorage.getItem("account")
@@ -64,6 +68,7 @@ function App() {
   useEffect(() => {
     localStorage.setItem("Blogs", JSON.stringify(blogs));
   }, [blogs]);
+  //==========================================================
   return (
     <div className="App">
       <ProductContext.Provider value={[productData, setProductData]}>
@@ -99,7 +104,9 @@ function App() {
                     <Route path="/register" element={<RegisterPage />} />
                     <Route path="/shop/:id" element={<SingleProduct />} />
                     <Route path="/blogs" element={<Blogs />} />
+                    <Route path="/blogs/:id" element={<SingleBlogPage />} />
                     <Route path="/addBlog" element={<AddBlog />} />
+                    <Route path="/blogAdmin" element={<BlogAdmin />} />
                   </Routes>
                   <Footer />
                 </BrowserRouter>

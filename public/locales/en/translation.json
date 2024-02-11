@@ -104,5 +104,10 @@
     "6": "Password",
     "7": "Register now",
     "8":"Register"
+  },
+  "blogs":{
+    "1":"Discover new technologies",
+    "2":"Blogs",
+    "3":"Other Blogs"
   }
 }
