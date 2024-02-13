@@ -26,40 +26,38 @@ const AddBlog = () => {
     navigate("/blogs");
   };
   return (
-    <div>
-      <Form onSubmit={handleSubmit}>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Enter email"
-            name="title"
-            onChange={handleChange}
-          />
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Password"
-            name="description"
-            onChange={handleChange}
-          />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Password"
-            name="image"
-            onChange={handleChange}
-          />
-        </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form>
+    <div className="edit-blog-page">
+      <div className="edit-blog-info">
+        <Form onSubmit={handleSubmit}>
+          <label htmlFor="floatingTextarea2">Image</label>
+          <div className="form-floating">
+            <textarea
+              className="form-control"
+              name="image"
+              id="floatingTextarea2"
+              style={{ height: 100 }}
+              onChange={handleChange}
+            />
+          </div>
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>Title</Form.Label>
+            <Form.Control type="text" name="title" onChange={handleChange} />
+          </Form.Group>{" "}
+          <label htmlFor="floatingTextarea2">Description</label>
+          <div className="form-floating">
+            <textarea
+              className="form-control"
+              name="description"
+              id="floatingTextarea2"
+              style={{ height: 100 }}
+              onChange={handleChange}
+            />
+          </div>
+          <Button variant="primary" type="submit">
+            Add Blog
+          </Button>
+        </Form>
+      </div>
     </div>
   );
 };

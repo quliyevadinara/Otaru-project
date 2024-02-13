@@ -101,15 +101,34 @@
     "1": "Səhv e-poçt! @ simvolundan istifadə edilməlidir.",
     "2": "Minimum səkkiz simvol, ən azı bir hərf və bir rəqəm!",
     "3": "Artıq bir hesabınız var mı? Daxil ol",
-    "4":"İstifadəçi adı",
-    "5":"E-poçt ünvanı",
-    "6":"Parol",
-    "7":"İndi qeydiyyatdan keç",
-    "8":"Qeydiyyatdan keç"
+    "4": "İstifadəçi adı",
+    "5": "E-poçt ünvanı",
+    "6": "Parol",
+    "7": "İndi qeydiyyatdan keç",
+    "8": "Qeydiyyatdan keç"
   },
-  "blogs":{
-    "1":"Yeni texnologiyaları kəşf edin",
-    "2":"Bloqlar",
-    "3":"Digər Bloqlar"
+  "blogs": {
+    "1": "Yeni texnologiyaları kəşf edin",
+    "2": "Bloqlar",
+    "3": "Digər Bloqlar"
+  },
+  "sort-product": {
+    "1": "Əvvəlcə ucuz",
+    "2": "Əvvəlcə bahalı",
+    "3": "Hamısı"
+  },
+  "admin-blog": {
+    "1": "Şəkil",
+    "2": "Başlıq",
+    "3": "Məzmun",
+    "4": "Redaktə et",
+    "5": "Redaktə et/Yenilə",
+    "6":"Yeni bloq yaradın",
+    "7":"Yaradın",
+    "8":"Sil"
+  },
+  "contact":{
+    "1":"Bizimlə əlaqə saxlamaqdan çəkinməyin!",
+    "2":""
   }
 }

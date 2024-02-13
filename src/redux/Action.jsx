@@ -10,3 +10,9 @@ export const removeblogFunction = (id) => {
     payload: id,
   };
 };
+export const editblogFunction = (blog) => {
+  return {
+    type: "EDIT_BLOG",
+    payload: blog,
+  };
+};

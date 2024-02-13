@@ -24,6 +24,9 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import BlogAdmin from "./admin/BlogAdmin";
 import SingleBlogPage from "./pages/SingleBlogPage";
+import TopToBtn from "./components/TopToBtn";
+import EditBlog from "./pages/EditBlog";
+import ProductAdmin from "./admin/ProductAdmin";
 
 // contextler=============================================
 export const ProductContext = createContext();
@@ -78,6 +81,7 @@ function App() {
               <CartProvider>
                 <BrowserRouter>
                   <NavPage />
+                  <TopToBtn />
                   <ToastContainer
                     position="top-right"
                     autoClose={1000}
@@ -105,8 +109,10 @@ function App() {
                     <Route path="/shop/:id" element={<SingleProduct />} />
                     <Route path="/blogs" element={<Blogs />} />
                     <Route path="/blogs/:id" element={<SingleBlogPage />} />
+                    <Route path="/blogAdmin/:id" element={<EditBlog />} />
                     <Route path="/addBlog" element={<AddBlog />} />
                     <Route path="/blogAdmin" element={<BlogAdmin />} />
+                    <Route path="/productAdmin" element={<ProductAdmin />} />
                   </Routes>
                   <Footer />
                 </BrowserRouter>

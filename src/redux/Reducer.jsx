@@ -7,7 +7,16 @@ export const AppReducer = (state = initialState, action) => {
     case "ADD_BLOG":
       return [...state, action.payload];
     case "REMOVE_BLOG":
-      return;
+      return state.filter((item) => item.id !== action.payload);
+    case "EDIT_BLOG":
+      const myBlogs = state.map((item) => {
+        if (item.id == action.payload.id) {
+          return action.payload;
+        } else {
+          return item;
+        }
+      });
+      return (state = myBlogs);
     default:
       return state;
   }

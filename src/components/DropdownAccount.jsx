@@ -22,13 +22,17 @@ const DropdownAccount = () => {
     e.preventDefault();
     navigate("/blogAdmin");
   };
+  const handleProductAdmin = (e) => {
+    e.preventDefault();
+    navigate("/productAdmin");
+  };
   return (
     <div>
       <div class="dropdown">
         <button class="dropbtn">{user.username}</button>
         <div class="dropdown-content">
           <button onClick={handleLogOut}>Log out</button>
-          <button>Products</button>
+          <button onClick={handleProductAdmin}>Products</button>
           <button onClick={handleBlogAdmin}>Blogs</button>
         </div>
       </div>

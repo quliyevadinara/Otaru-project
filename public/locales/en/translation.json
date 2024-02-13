@@ -103,11 +103,30 @@
     "5": "Email address",
     "6": "Password",
     "7": "Register now",
-    "8":"Register"
+    "8": "Register"
   },
-  "blogs":{
-    "1":"Discover new technologies",
-    "2":"Blogs",
-    "3":"Other Blogs"
+  "blogs": {
+    "1": "Discover new technologies",
+    "2": "Blogs",
+    "3": "Other Blogs"
+  },
+  "sort-product": {
+    "1": "Cheap at first",
+    "2": "Expensive at first",
+    "3": "All"
+  },
+  "admin-blog": {
+    "1": "Image",
+    "2": "Title",
+    "3": "Content",
+    "4": "Edit",
+    "5": "Edit/Update",
+    "6": "Create a new blog",
+    "7": "Create",
+    "8": "Delete"
+  },
+  "contact": {
+    "1": "Do not hesitate to contact us!",
+    "2": ""
   }
 }
