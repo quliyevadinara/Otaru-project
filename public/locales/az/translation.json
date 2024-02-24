@@ -63,7 +63,10 @@
     "6": "Almaq",
     "7": "Endirim kodu uğurla tətbiq edildi",
     "8": "Zəhmət olmasa endirim kodunu daxil edin",
-    "9": "Məhsul səbətdən çıxarıldı"
+    "9": "Məhsul səbətdən çıxarıldı",
+    "10": "Endirim kodu",
+    "11": "Endirim əldə edin",
+    "12": "Siz daxil olmalısınız"
   },
   "empty-cart": {
     "1": "Kartınız boşdur!",
@@ -123,12 +126,47 @@
     "3": "Məzmun",
     "4": "Redaktə et",
     "5": "Redaktə et/Yenilə",
-    "6":"Yeni bloq yaradın",
-    "7":"Yaradın",
-    "8":"Sil"
+    "6": "Yeni bloq yaradın",
+    "7": "Yaradın",
+    "8": "Sil"
   },
-  "contact":{
-    "1":"Bizimlə əlaqə saxlamaqdan çəkinməyin!",
-    "2":""
+  "contact": {
+    "1": "Bizimlə əlaqə saxlamaqdan çəkinməyin!",
+    "2": "Mesajınız uğurla göndərildi",
+    "3": "Boş olmamalıdır",
+    "4": "Adınız",
+    "5": "Emailiniz",
+    "6": "Mesajınız",
+    "7": "Təqdim et",
+    "8": "Bizimlə əlaqə qurmaq və ya suallarınızı ünvanlamaq üçün formu doldurun.Bizə e-poçt ünvanımızdan və ya telefon nömrəmizdən çatdırılan məktublar vasitəsilə müraciət edə bilərsiniz."
+  },
+  "faq-page": {
+    "1": "Tez-tez soruşulan suallar",
+    "2": "Qulaqlıqlar necə işləyir?",
+    "3": "Telefonumun səsini qulaqlıqlardan necə göndərə bilərəm",
+    "4": "Speaker necə şarj edilir?",
+    "5": "Klaviatura suya dayanıqlıdır?",
+    "6": "Dəstəklənən dillər hansılardır?",
+    "7": "Qulaqlıqlarımız bluetooth və ya kabel ilə cihazınıza bağlanır. Sonra səs göndərmək və qəbul etmək üçün istifadə edə bilərsiniz.Hər hansısa bir çətinliyiniz olsa bizimlə əlaqə saxlaya bilərsiniz.",
+    "8": "Telefonunuzda səsli zəng etmək və musiqi dinləmək istədiyinizdə, bluetooth qulaqlıqları seçərək səslərinizi onlara yönlədirə bilərsiniz.    ",
+    "9": "Speakerımız rahatlıqla USB kabeli ilə şarj edilir. Yalnızca kabeli speaker və bir güc mənbəyi arasında qoymaq kifayətdir, əgər mümkünsə, kompüterinizdən şarj edə bilərsiniz.",
+    "10": "Hər klaviatura suya dayanıqlı deyil. Lakin bizim klaviaturalarımız suya və toza qarşı dayanıqlıdır. Sizə daha uzun müddət rahatlıqla istifadə imkanı təmin edir.",
+    "11": "Klaviaturalarımız geniş dil dəstəyi ilə təchiz olunmuşdur. Əgər sizin diliniz mövcud deyilsə, bizimlə əlaqə saxlayın. Yeni dil əlavə etmək üçün çalışacağıq."
+  },
+  "review": {
+    "1": "Zəhmət olmasa qiymətləndirin",
+    "2": "Boş olmamalıdır",
+    "3": "Göndər",
+    "4": "Mesajınız uğurla göndərildi!",
+    "5": "Rəylər"
+  },
+  "thanks": {
+    "1": "Alış-verişiniz uğurla tamamlandı",
+    "2": "Bizi seçdiyiniz üçün təşəkkürlər!"
+  },
+  "dropdown": {
+    "1": "Çıxış edin",
+    "2": "Bloqlar",
+    "3": "Məhsullar"
   }
 }

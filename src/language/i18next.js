@@ -15,7 +15,6 @@ import LanguageDetector from "i18next-browser-languagedetector";
 //     },
 //   },
 // };
-
 i18n
   .use(LanguageDetector)
   .use(Backend)

@@ -30,9 +30,9 @@ const Blogs = () => {
         </div>
       </div>
       <span className="about">{t("blogs.1")}</span>
-      <h1 >{t("blogs.2")}</h1>
+      <h1>{t("blogs.2")}</h1>
       {blogs?.map((blog) => {
-        return <Blog blog={blog} />;
+        return <Blog blog={blog} key={blog.id} />;
       })}
     </div>
   );

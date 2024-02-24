@@ -1,24 +1,36 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useCart } from "react-use-cart";
 import EmptyCart from "./EmptyCart";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
+import { AccountDataContext } from "../App";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const { t, i18n } = useTranslation();
   const { items, removeItem, updateItemQuantity, cartTotal } = useCart();
   const [promocode, setPromocode] = useState();
   const [istrue, setIstrue] = useState(false);
+  const [accountData, setAccountData] = useContext(AccountDataContext);
+  const navigate = useNavigate();
   const code = "dinare50";
   const handleChangeTotal = () => {
     if (code == promocode) {
       setIstrue(true);
-      toast.success(`${t("cart-page.7")}`)
+      toast.success(`${t("cart-page.7")}`);
     }
-    if(promocode==" "){
-      toast.error(`${t("cart-page.8")}`)
+    if (promocode == " ") {
+      toast.error(`${t("cart-page.8")}`);
     }
     setPromocode(" ");
+  };
+
+  const handleBuyProduct = () => {
+    if (accountData === false) {
+      toast.error(`${t("cart-page.12")}`);
+    } else {
+      navigate("/thanks");
+    }
   };
   return (
     <>
@@ -45,10 +57,9 @@ const Cart = () => {
                       scope="row"
                       className="remove-item"
                       onClick={() => {
-                        removeItem(item.id)
-                        toast.success(t("cart-page.9"))
+                        removeItem(item.id);
+                        toast.success(t("cart-page.9"));
                       }}
-
                     >
                       X
                     </th>
@@ -65,7 +76,7 @@ const Cart = () => {
                     <td className="item-quantity">
                       <span>{item.quantity}</span>
                       <button
-                      className="add-item-btn"
+                        className="add-item-btn"
                         onClick={() =>
                           updateItemQuantity(item.id, item.quantity + 1)
                         }
@@ -73,7 +84,7 @@ const Cart = () => {
                         +
                       </button>{" "}
                       <button
-                      className="remove-item-btn"
+                        className="remove-item-btn"
                         onClick={() =>
                           updateItemQuantity(item.id, item.quantity - 1)
                         }
@@ -94,11 +105,11 @@ const Cart = () => {
               </h4>
             </div>
             <div className="cart-buy">
-              <button>{t("cart-page.6")}</button>
+              <button onClick={handleBuyProduct}>{t("cart-page.6")}</button>
             </div>
           </div>
           <div className="promo-code">
-            <label htmlFor="promocode">Promo Code</label> <br />
+            <label htmlFor="promocode">{t("cart-page.10")}</label> <br />
             <input
               type="text"
               name="promocode"
@@ -107,7 +118,7 @@ const Cart = () => {
               onChange={(e) => setPromocode(e.target.value)}
               value={promocode}
             />
-            <button onClick={handleChangeTotal}>Get discount</button>
+            <button onClick={handleChangeTotal}>{t("cart-page.11")}</button>
           </div>
         </div>
       )}

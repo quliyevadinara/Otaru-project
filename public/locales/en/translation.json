@@ -61,7 +61,10 @@
     "6": "Buy",
     "7": "The discount code has been successfully applied",
     "8": "Please enter the discount code",
-    "9": "The product has been removed from the cart"
+    "9": "The product has been removed from the cart",
+    "10": "Promo code",
+    "11": "Get discount",
+    "12": "You must be logged in"
   },
   "empty-cart": {
     "1": "Your cart is empty!",
@@ -127,6 +130,41 @@
   },
   "contact": {
     "1": "Do not hesitate to contact us!",
-    "2": ""
+    "2": "Your message has been sent successfully",
+    "3": "It should not be empty",
+    "4": "Your name",
+    "5": "Your email",
+    "6": "Your message",
+    "7": "Submit",
+    "8": "Fill out the form to contact us or address your questions. You can contact us through letters delivered to our e-mail address or phone number.f"
+  },
+  "faq-page": {
+    "1": "Frequently asked questions",
+    "2": "How do headphones work?",
+    "3": "How can I send the sound of my phone from the headphones",
+    "4": "How to charge the speaker?",
+    "5": "Is the keyboard waterproof?",
+    "6": "What are the supported languages?",
+    "7": "Our headphones connect to your device via bluetooth or cable. Then you can use it to send and receive sound. If you have any problems, you can contact us.",
+    "8": "When you want to make voice calls and listen to music on your phone, you can choose bluetooth headphones and direct your sounds to them. ",
+    "9": "Our speaker is easily charged with a USB cable. Just put the cable between the speaker and a power source, if possible, you can charge it from your computer.",
+    "10": "Not every keyboard is water resistant. But our keyboards are water and dust resistant. It gives you a longer time of comfortable use.",
+    "11": "Our keyboards are equipped with a wide range of language support. If your language is not available, please contact us. We will work to add a new language."
+  },
+  "review": {
+    "1": "Please rate",
+    "2": "Must not be empty",
+    "3": "Send",
+    "4": "Your message has been successfully sent!",
+    "5": "Reviews"
+  },
+  "thanks": {
+    "1": "Your purchase has been successfully completed",
+    "2": "Thanks for choosing us!"
+  },
+  "dropdown": {
+    "1": "Log out",
+    "2": "Blogs",
+    "3": "Products"
   }
 }
