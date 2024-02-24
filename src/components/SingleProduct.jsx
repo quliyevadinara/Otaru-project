@@ -58,7 +58,7 @@ const SingleProduct = () => {
       </div>
       <div className="review-container">
         <h2>{t("review.5")}</h2>
-        <SingleReview/>
+        <SingleReview product={product}/>
       </div>
     </div>
   );

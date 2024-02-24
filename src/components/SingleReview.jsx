@@ -2,15 +2,15 @@ import React, { useContext } from "react";
 import { ReviewContext } from "../App";
 import { useParams } from "react-router-dom";
 
-const SingleReview = () => {
+const SingleReview = ({product}) => {
   const [review, setReview] = useContext(ReviewContext);
   console.log(review);
-  const { id } = useParams();
-  console.log(id);
+  console.log(product.id);
   return (
     <div className="single-review">
-      {review.map((item) => {
-        item.id == id ? (
+      {review.map((item) =>
+      {
+        item.id == product.id ? (
           <div className="review-section">
             <span>{item.id}</span>
             <p>{item.name}</p>
